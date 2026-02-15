@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DriverAssistant" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF6200</item>
+        <item name="colorPrimaryVariant">#E55A00</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        
+        <item name="colorSecondary">#03DAC6</item>
+        <item name="colorSecondaryVariant">#018786</item>
+        <item name="colorOnSecondary">#000000</item>
+        
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    
+    <style name="Theme.DriverAssistant.Overlay" parent="Theme.Material3.DayNight">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

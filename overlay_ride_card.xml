@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/overlay_background">
+
+        <!-- Indicador de Classificação -->
+        <View
+            android:id="@+id/classification_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/ride_good" />
+
+        <!-- Título da Classificação -->
+        <TextView
+            android:id="@+id/tv_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oferta Boa"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/overlay_text"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Grid de Métricas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <!-- R$/Km -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$/Km"
+                    android:textSize="12sp"
+                    android:textColor="@color/overlay_text"
+                    android:alpha="0.7" />
+
+                <TextView
+                    android:id="@+id/tv_value_per_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 2.35"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/overlay_text" />
+            </LinearLayout>
+
+            <!-- R$/Hora -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$/Hora"
+                    android:textSize="12sp"
+                    android:textColor="@color/overlay_text"
+                    android:alpha="0.7" />
+
+                <TextView
+                    android:id="@+id/tv_value_per_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 52.80"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/overlay_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Lucro -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lucro"
+                    android:textSize="12sp"
+                    android:textColor="@color/overlay_text"
+                    android:alpha="0.7" />
+
+                <TextView
+                    android:id="@+id/tv_profit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 38.90"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/overlay_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/overlay_text"
+            android:alpha="0.2"
+            android:layout_marginVertical="8dp" />
+
+        <!-- Informações Adicionais -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="42 min"
+                android:textSize="14sp"
+                android:textColor="@color/overlay_text"
+                android:alpha="0.8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="·"
+                android:textSize="14sp"
+                android:textColor="@color/overlay_text"
+                android:alpha="0.8"
+                android:paddingHorizontal="4dp" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="18.3 km"
+                android:textSize="14sp"
+                android:textColor="@color/overlay_text"
+                android:alpha="0.8" />
+
+            <!-- Botão Fechar -->
+            <TextView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✕"
+                android:textSize="20sp"
+                android:textColor="@color/overlay_text"
+                android:padding="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

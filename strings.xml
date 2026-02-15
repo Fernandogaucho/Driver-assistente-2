@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Driver Assistant</string>
+    
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_description">Analisa ofertas de corrida em tempo real dos apps Uber, 99 e inDrive, calculando ganhos por km e por hora para ajudar você a escolher as melhores corridas.</string>
+    
+    <!-- Main Screen -->
+    <string name="welcome_title">Bem-vindo ao Driver Assistant</string>
+    <string name="welcome_subtitle">Seu copiloto inteligente para maximizar seus ganhos</string>
+    <string name="enable_service">Ativar Serviço</string>
+    <string name="service_enabled">Serviço Ativado</string>
+    <string name="configure_goals">Configurar Metas</string>
+    <string name="view_history">Ver Histórico</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Configurações</string>
+    <string name="goal_per_km">Meta R$/Km</string>
+    <string name="goal_per_hour">Meta R$/Hora</string>
+    <string name="enable_voice">Ativar Notificação por Voz</string>
+    <string name="enable_camera">Ativar Câmera de Segurança</string>
+    <string name="overlay_position">Posição do Overlay</string>
+    <string name="save">Salvar</string>
+    
+    <!-- Overlay -->
+    <string name="good_ride">Oferta Boa</string>
+    <string name="medium_ride">Pense Duas Vezes</string>
+    <string name="bad_ride">Oferta Ruim</string>
+    <string name="per_km">R$/Km</string>
+    <string name="per_hour">R$/Hora</string>
+    <string name="profit">Lucro</string>
+    <string name="distance">Distância</string>
+    <string name="duration">Duração</string>
+    
+    <!-- History -->
+    <string name="history_title">Histórico de Corridas</string>
+    <string name="no_rides">Nenhuma corrida analisada ainda</string>
+    
+    <!-- Permissions -->
+    <string name="permission_overlay_title">Permissão de Sobreposição</string>
+    <string name="permission_overlay_message">Para exibir o botão flutuante, precisamos da permissão para sobrepor outros apps.</string>
+    <string name="permission_accessibility_title">Serviço de Acessibilidade</string>
+    <string name="permission_accessibility_message">Para ler as informações das corridas, precisamos que você ative o serviço de acessibilidade.</string>
+    <string name="grant_permission">Conceder Permissão</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Driver Assistant</string>
+    <string name="notification_channel_description">Notificações do serviço de análise de corridas</string>
+    <string name="notification_title">Driver Assistant Ativo</string>
+    <string name="notification_message">Analisando corridas em tempo real</string>
+</resources>
